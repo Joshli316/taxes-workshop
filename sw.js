@@ -1,4 +1,4 @@
-const CACHE = 'taxes-workshop-v4';
+const CACHE = 'taxes-workshop-v5';
 const ASSETS = [
   '/',
   '/index.html',
@@ -11,6 +11,7 @@ const ASSETS = [
   '/resources.js',
   '/404.js',
   '/apple-touch-icon.png',
+  '/og.png',
   '/sitemap.xml',
 ];
 

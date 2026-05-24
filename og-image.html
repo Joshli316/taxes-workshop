@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>OG image — Money &amp; Taxes Workshop</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&family=Inter:wght@400;500;700;800&display=swap">
+<style>
+  :root {
+    --primary: #115e59;
+    --primary-dark: #134e4a;
+    --accent: #f59e0b;
+    --accent-light: #fef3c7;
+    --accent-text: #b45309;
+    --bg: #f0fdfa;
+    --ink: #134e4a;
+    --sub: #475569;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1200px; height: 630px; overflow: hidden; }
+  body {
+    font-family: "Inter", -apple-system, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    padding: 56px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+  }
+  body::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 12px;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-dark) 50%, var(--accent) 100%);
+  }
+  .header { display: flex; align-items: center; gap: 14px; }
+  .icon-square {
+    width: 56px; height: 56px;
+    border-radius: 12px;
+    background: var(--primary);
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 16px rgba(17,94,89,0.25);
+  }
+  .icon-square svg { width: 32px; height: 32px; }
+  .org-name {
+    font-size: 17px; font-weight: 600;
+    letter-spacing: 0.04em; color: var(--sub);
+    text-transform: uppercase;
+  }
+  .workshop-tag {
+    display: inline-block;
+    background: var(--accent-light);
+    color: var(--accent-text);
+    font-size: 13px; font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 4px 12px;
+    border-radius: 16px;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+  .title-zh {
+    font-family: "Noto Sans SC", "PingFang SC", sans-serif;
+    font-size: 96px; font-weight: 700;
+    color: var(--primary-dark);
+    line-height: 1.05;
+    margin-bottom: 16px;
+    letter-spacing: -0.02em;
+  }
+  .title-en {
+    font-size: 44px; font-weight: 500;
+    color: var(--ink);
+    line-height: 1.15;
+  }
+  .amber-rule {
+    width: 80px; height: 4px;
+    background: var(--accent);
+    border-radius: 2px;
+    margin: 28px 0 22px;
+  }
+  .topics {
+    display: flex; gap: 28px;
+    font-size: 19px; font-weight: 600;
+    color: var(--sub);
+  }
+  .topics .dot { color: var(--accent); margin-right: 6px; }
+  .footer { display: flex; justify-content: space-between; align-items: flex-end; }
+  .url {
+    font-size: 17px; font-weight: 700;
+    color: var(--primary);
+    font-family: ui-monospace, "SF Mono", monospace;
+  }
+  .corner-mark {
+    position: absolute;
+    bottom: 64px; right: 64px;
+    width: 80px; height: 80px;
+    border: 3px solid var(--accent);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--accent-text);
+    font-size: 38px; font-weight: 800;
+  }
+</style>
+</head>
+<body>
+  <div>
+    <div class="header">
+      <div class="icon-square">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="12" y1="1" x2="12" y2="23"></line>
+          <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+        </svg>
+      </div>
+      <div class="org-name">Chinatown Service Center · 华埠服务中心</div>
+    </div>
+    <div style="margin-top:36px;">
+      <div class="workshop-tag">Workshop · 工资与税务</div>
+      <div class="title-zh">工资与税务</div>
+      <div class="title-en">Money &amp; Taxes for Workers</div>
+      <div class="amber-rule"></div>
+      <div class="topics">
+        <span><span class="dot">●</span>工资单 Pay Stub</span>
+        <span><span class="dot">●</span>报税 Filing</span>
+        <span><span class="dot">●</span>VITA 免费协助</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="url">taxes-workshop.pages.dev</div>
+  </div>
+  <div class="corner-mark">$</div>
+</body>
+</html>
