@@ -1,4 +1,4 @@
-const CACHE = 'taxes-workshop-v5';
+const CACHE = 'taxes-workshop-v6';
 const ASSETS = [
   '/',
   '/index.html',
