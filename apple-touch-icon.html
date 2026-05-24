@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>Apple Touch Icon — Money &amp; Taxes Workshop</title>
+<style>
+  :root { --primary: #115e59; --primary-dark: #134e4a; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 360px; height: 360px; overflow: hidden; }
+  body {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    display: flex; align-items: center; justify-content: center; position: relative;
+  }
+  body::after {
+    content: ""; position: absolute; inset: 0;
+    background: radial-gradient(ellipse at 30% 30%, rgba(94,234,212,0.18) 0%, transparent 60%);
+  }
+  .icon {
+    color: #f0fdfa; width: 210px; height: 210px;
+    position: relative; z-index: 1;
+    filter: drop-shadow(0 4px 18px rgba(0,0,0,0.35));
+  }
+</style>
+</head>
+<body>
+  <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <line x1="12" y1="1" x2="12" y2="23"></line>
+    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+  </svg>
+</body>
+</html>
